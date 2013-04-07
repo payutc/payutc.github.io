@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Payutc.github.io by payutc</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Payutc.github.io</h1>
+        <p class="header">Pages for http://payutc.github.io</p>
+
+
+
+        <ul>
+          <li><a class="buttons github" href="https://github.com/payutc">GitHub Profile</a></li>
+        </ul>
+
+      </header>
+      <section>
+        <p><a href="https://travis-ci.org/payutc/server"><img src="https://travis-ci.org/payutc/server.png?branch=master" alt="Build Status"></a></p>
+
+<h1>Introduction</h1>
+
+<p>payutc est un système de paiement avec porte-monnaie électronique avec une architecture client/serveur basée sur des Web Services. Il est utilisé au sein des associations de l'<a href="http://www.utc.fr">Université de Technologie de Compiègne</a>.</p>
+
+<p>Ce dépôt héberge le serveur du projet. Il s'agit d'un fork de celui utilisé par <a href="http://github.com/buckutt/server">BuckUTT</a>, projet similaire déjà en service à l'UTT.</p>
+
+<p>Les clients utilisés à l'UTC sont :</p>
+
+<ul>
+<li>
+<a href="https://github.com/payutc/casper">casper</a> : client de gestion de son compte personnel, avec rechargement, virement et visualisation de l'historique</li>
+<li>
+<a href="https://github.com/payutc/scoobydoo">scoobydoo</a> :  client d'administration des droits et des produits</li>
+<li>
+<a href="https://github.com/payutc/mozart">mozart</a> : client pour les encaissements via une interface tactile</li>
+<li>
+<a href="https://github.com/payutc/pauline">pauline</a> : point de vente pour smartphones sous Android</li>
+</ul><h1>Installation</h1>
+
+<p>Le projet utilise Composer pour la gestion des dépendances.</p>
+
+<p>Après avoir cloné le dépôt, il faut installer Composer :</p>
+
+<pre><code>curl -s https://getcomposer.org/installer | php
+</code></pre>
+
+<p>Puis, installer les dépendances :</p>
+
+<pre><code>php composer.phar install
+</code></pre>
+
+<p>Il faut également remplir le fichier de configuration :
+    cp config.inc.dist.php config.inc.php</p>
+
+<p>Puis ouvrir <code>config.inc.php</code> et modifier les différentes valeurs.</p>
+
+<h1>Contribuer</h1>
+
+<p>Le projet est distribué sous licence GPLv3. Nous acceptons les contributions directement sous forme de <a href="https://help.github.com/articles/using-pull-requests">pull requests</a>.</p>
+
+<p>Une mailing-liste regroupant les développeurs est disponible, écrivez à <a href="mailto:payutc@assos.utc.fr">payutc@assos.utc.fr</a> pour demander à être inscrit (ou pour toute autre demande !).</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
