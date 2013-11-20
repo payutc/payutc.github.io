@@ -1,0 +1,11 @@
+<h1>Documentation for {{include.service}}</h1>
+
+<ul>
+{% for member in site.data[include.service] %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
