@@ -19,13 +19,11 @@
         <h1 class="header">payutc</h1>
         <p class="header"></p>
 
-
-
         <ul id="menu">          
           <li data-section=""><a href="/">Accueil</a></li>
           <li data-section="install"><a href="/install">Installation</a></li>
           <li>
-            Documentation
+            <a href="/docs">Documentation</a>
             <!--<ul>
               <li data-section="docs/websale"><a href="/docs/websale">WEBSALE</a></li>
             </ul>-->
@@ -42,6 +40,8 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
       $('#menu [data-section="{{page.section}}"]').addClass('active');
     </script>
