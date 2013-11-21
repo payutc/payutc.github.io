@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>payutc{% if page.title }%} - {{page.title}}{% endif %}</title>
+    <title>payutc{% if page.title %} - {{page.title}}{% endif %}</title>
 
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
@@ -22,12 +22,7 @@
         <ul id="menu">          
           <li data-section=""><a href="/">Accueil</a></li>
           <li data-section="install"><a href="/install">Installation</a></li>
-          <li>
-            <a href="/docs">Documentation</a>
-            <!--<ul>
-              <li data-section="docs/websale"><a href="/docs/websale">WEBSALE</a></li>
-            </ul>-->
-          </li>
+          <li data-section="docs"><a href="/docs">Documentation</a></li>
           <li><a class="buttons github" href="https://github.com/payutc">GitHub Profile</a></li>
         </ul>
 
