@@ -1,8 +1,27 @@
-- name: Tom Preston-Werner
-  github: mojombo
+- name: createTransaction
+  descr: Create a new transaction
+  params:
+    - name: items
+      descr: >
+        IDs of the products. This is a string with the following form, where we are selling 2
+        units of product_id 351 and 1 unit of product_id 355:
+      code: "{'351': 2, '355': 1}"
+      
+    - name: fun_id
+      descr: ID of the fundation selling the items
 
-- name: Parker Moore
-  github: parkr
+    - name: mail
+      descr: Email address for the customer (will be used if payment is done without a payutc account)
+      
+    - name: return_url
+      descr: URL to redirect the customer after the payment
+      
+    - name: callback_url
+      descr: URL to ping when the payment has been validated (currently not supported)
+  response:
+    - name: tra_id
+      descr: The transaction ID
+    - name: url
+      descr: URL that the customer should be redirected to in order to proceed through payment
 
-- name: Liu Fengyun
-  github: liufengyun
+

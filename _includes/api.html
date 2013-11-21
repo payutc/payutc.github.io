@@ -1,11 +1,47 @@
-<h1>Documentation for {{include.service}}</h1>
+<h1>Documentation for {{ include.service }}</h1>
 
-<ul>
-{% for member in site.data[include.service] %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
-  </li>
+{% for method in site.data[include.service] %}
+
+<h2>{{ method.name }}</h2>
+
+<h3>Request</h3>
+
+<table>
+  
+{% for param in method.params %}
+<tr>
+  <th>{{ param.name }}</th>
+  <td>
+    {{ param.descr }}
+    {% if param.code %}
+    {% highlight json %}
+    {{ param.code }}
+    {% endhighlight %}
+    {% endif %}
+  </td>
+</tr>
 {% endfor %}
-</ul>
+
+</table>
+
+<h3>Response</h3>
+
+<table>
+
+{% for param in method.response %}
+<tr>
+  <th>{{ param.name }}</th>
+  <td>
+    {{ param.descr }}
+    {% if param.code %}
+    {% highlight json %}
+    {{ param.code }}
+    {% endhighlight %}
+    {% endif %}
+  </td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endfor %}
